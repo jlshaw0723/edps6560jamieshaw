@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style_2.css">
+      <!-- Sytlesheet-->
+      <link rel="stylesheet" href="css/style_revised.css">
       
        <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Patrick+Hand" rel="stylesheet">
@@ -17,10 +18,9 @@
     <title>Data Tracker</title>
   </head>
   <body>
-      <!-- Sytlesheet-->
-      <link rel="stylesheet" href="css/style%202.css"
       
-   <!-- BS4 navbar documentation: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+      
+   <!-- "BS4 navbar documentation: https://getbootstrap.com/docs/4.3/components/navbar/" -->
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <div class="d-flex flex-row align-items-stretch w-100 p-0 text-black" style="height: 40px;">
             <div class="align-self-center ml-2">
@@ -39,12 +39,20 @@
       
          <!-- CSS Grid -->
       <div class="jumbotron">
-  <h1 class="display-4">Welcome Back, Boston!</h1>
+  <h1 class="display-4">Welcome, Boston!</h1>
   <p class="lead">After being progress monitored, enter your scores into your tracker.</p>
   <hr class="my-4">
-  <p>Take a look and see how you are doing on your reading!</p>
-  <a class="btn btn-primary btn-lg" href="pages/tracker" role="button">View Tracker</a>
+  <p>Click the button to enter your scores!</p>
+  <a id="input_btn_View_Tracker" class="btn btn-primary btn-lg" href="pages/tracker.html" role="button">Enter Scores</a>
 </div>
+      <div id="view_loading" class="row justify-content-center align-items-center">
+            <div class="col-auto text-center">
+                <div class="spinner-grow text-dark" role="status" style="width: 3rem; height: 3rem;">
+                  
+                </div>
+            
+            </div>
+        </div> 
       
       <div id="landing_btn_group" class="btn-group-vertical btn-group-lg">
     <div id="section_content" class="container-fluid">
@@ -55,12 +63,6 @@
         <div id="view_instruction" class="row" style="overflow-y: scroll;">
             <div class="col">
                 <nav class="mt-2">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item"><a id="input_btn_correct_letter_sounds" class="page-link bg-dark text-white" href="#">Correct Letter Sounds</a></li>
-                    <li class="page-item"><a id="input_btn_whole_words_read" class="page-link bg-dark text-white" href="#">Whole Words Read</a></li>
-                    <li class="page-item"><a id="input_btn_fluency" class="page-link bg-dark text-white" href="#">Fluency</a></li>
-                    <li class="page-item"><a id="input_btn_accuracy" class="page-link bg-dark text-white" href="#">Accuracy</a></li>
-                  </ul>
                 </nav>
                 <div style="height: 600px">
                 </div>
@@ -79,7 +81,6 @@
               This is a new section about Correct Letter Sounds
               </div>
           </div>
-       
       </div>
     
 
@@ -93,6 +94,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/variable.js"></script>
-    <script src="pages/tracker"></script>
+    <!--<script src="pages/tracker"></script>-->
   </body>
 </html>
